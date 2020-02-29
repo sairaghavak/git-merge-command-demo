@@ -14,6 +14,6 @@ Part - II
 |`master` commit messages stack | `b1-cut-from-commit-m1` commit messages stack|
 |---|---|
 |`m1`| `b1` <br> `m1`|
-|Now assume there is a change made to master as `m2` and the new commit stack for master looks like below  <br> `m2` <br> `m1` | If we do `git merge master` from `this` branch. <br> Then <br> 1. It may result in conflicts. <br> 2. We have to fix those conflicts. <br> 3. Then do `git commit` <br> Now, the commit message stack for this branch looks like this <br> `Merge branch 'master' into b1-cut-from-commit-m1` <br>`m2` <br> `b1` <br> `m1`|
+|Now assume there is a change made to master as `m2` and the new commit stack for master looks like below  <br> `m2` <br> `m1` | If we do `git merge master` from `this` branch. <br> Then <br> 1. It may result in conflicts. <br> 2. We have to fix those conflicts. <br> 3. Then do `git commit` <br>4. Finally do `git push`<br> Now, the commit message stack for this branch looks like this <br> `Merge branch 'master' into b1-cut-from-commit-m1` <br>`m2` <br> `b1` <br> `m1`|
 
 
